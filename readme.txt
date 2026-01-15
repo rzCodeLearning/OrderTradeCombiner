@@ -24,4 +24,4 @@ Order中的Amount是自己造的，为0；
 逐笔成交中的BSFlag其实是自己造的，可以通过BuyOrderID和SellOrderID推得，是冗余信息；
 深市的BSFlag原来是1和2，为了方便和逐笔成交对应所以改成了'B'和'S'；
 沪深两市的RecID的意义是一样的——都是同一个频道下单调递增的统一编号，可用于对Order/Trade/Cancel进行排序，但深市的逐笔委托中RecID就是委托编号，沪市的另有一个字段；
-取“BuyOrderID和SellOrderID中较大的那个（另一个是0）”的好办法是两者直接相加。
+取“BuyOrderID和SellOrderID中较大的那个（另一个是0）”的好办法是两者直接相加
